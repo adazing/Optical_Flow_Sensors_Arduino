@@ -47,7 +47,7 @@ public:
 
 private:
   uint8_t _cs;
-  u_int8_t _sensor;
+  uint8_t _sensor;
 
   void registerWrite(uint8_t reg, uint8_t value);
   uint8_t registerRead(uint8_t reg);
