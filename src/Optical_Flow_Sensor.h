@@ -45,12 +45,13 @@ public:
 
   void setLed(bool ledOn);
 
+  uint8_t registerRead(uint8_t reg);
+
 private:
   uint8_t _cs;
   uint8_t _sensor;
 
   void registerWrite(uint8_t reg, uint8_t value);
-  uint8_t registerRead(uint8_t reg);
   void initRegistersPMW3901(void);
   void initRegistersPAA5100(void);
   void secrectSauce(void);
